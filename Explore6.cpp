@@ -22,7 +22,7 @@ void PrintPoint(Point p) {
     cout << ": x = " << p.x << ", y = " << p.y << endl;
 }
 
-void SwapXY(Point &p) {
+void SwapXY(Point p) {
 	double temp = p.x;
 	p.x = p.y;
 	p.y = temp;
@@ -36,6 +36,4 @@ int main() {
 	cout << "a after calling SwapXY" << endl;
     PrintPoint(a);
     return 0;
-}
-
-
+}          
