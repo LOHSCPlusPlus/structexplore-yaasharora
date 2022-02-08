@@ -8,16 +8,19 @@ person();
 person(string n1, string n2);
 };
 
-person::person (string first, string last) {
+person::person() {
+  firstName = "unknown";
+  lastName = "unknown";
+
+}
+person::person (string n1, string n2) {
   cout << "In the other constructor" << endl;
-  firstName = first;
-  lastName = last;
+  firstName = n1;
+  lastName = n2;
+
 }
 void PrintPerson(person person) {
   cout << "Name is " << person.firstName << " " << person.lastName << endl;
-}
-void ChangeLastName(person &person, string newLastName) {
-  person.lastName = newLastName;
 }
 int main() {
 person person1;
