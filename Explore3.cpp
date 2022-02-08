@@ -26,12 +26,10 @@ int main() {
 	cout << "Creating a at 3, 15" << endl;
 	Point a(3,5);
 	cout << "Creating b with default" << endl;
-	Point b;
+	Point b(10,33);
 
 	cout << "Point a: x = " << a.x << ", y = " << a.y << endl;
 	cout << "Point b: x = " << b.x << ", y = " << b.y << endl;
 
 	return 0;
 }
-
-
